@@ -13,7 +13,7 @@
 		"packages-update": "wp-scripts packages-update",
 		"plugin-zip": "npm run copy-assets && wp-scripts plugin-zip",
 		"start": "npm run copy-assets && wp-scripts start --experimental-modules --blocks-manifest",
-		"copy-assets": "node src/build/copy-assets.js"
+		"copy-assets": "node src/scripts/copy-assets.js"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^19.0.0",

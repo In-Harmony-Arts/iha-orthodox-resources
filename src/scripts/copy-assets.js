@@ -17,6 +17,6 @@ async function copyDir(src, dest) {
 }
 
 // Copy all images
-// copyDir('./src/images/', './build/images/');
+copyDir('./src/images/', './build/images/');
 // Copy all static files
 copyDir('./src/static-text/', './build/static-text/');
