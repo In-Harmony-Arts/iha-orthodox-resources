@@ -11,9 +11,9 @@ Orthodox Calendar with lives of the saints, icons, troparions and kontakions. Da
 
 == Description ==
 
-There currently is onlu a Gutenberg Block instance for loading the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar.
+There currently is only a Gutenberg Block instance for loading the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar.
 
-There are settings for all of the options for the calendar as well as options for the assocaited link popup window.
+There are settings to customize what and how the content of the daily information displayed.
 
 There are plans to expand the blocks and/or functionality related to running an Orthodox Christian website in the future.
 
