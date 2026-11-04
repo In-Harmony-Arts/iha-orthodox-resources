@@ -5,7 +5,7 @@ return array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'orthodox-resources/daily-calendar',
-		'version' => '1.0.0',
+		'version' => '1.1.0',
 		'title' => 'Daily Orthodox Calendar',
 		'category' => 'widgets',
 		'icon' => 'calendar-alt',

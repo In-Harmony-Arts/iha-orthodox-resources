@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       IHA Orthodox Resources
  * Description:       "This plugin adds resources for use with Orthodox Christian websites"
- * Version:           1.0.0
+ * Version:           1.1.0
  * Requires at least: 6.8
  * Requires PHP:      7.4
  * Author:            In Harmony Arts
