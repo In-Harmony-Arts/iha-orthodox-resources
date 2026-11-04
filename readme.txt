@@ -101,3 +101,4 @@ Original source code can be found at: https://github.com/In-Harmony-Arts/daily-o
 = 1.1.0 =
 * Add height setting to daily calendar
 * Made date header sticky when scrolling
+* Fix garbled Russian popup content by detecting UTF-8 encoding

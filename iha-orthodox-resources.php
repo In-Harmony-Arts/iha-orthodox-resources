@@ -76,6 +76,10 @@ function iha_orthodox_resources_content_to_utf8( $content ) {
 		return '';
 	}
 
+	if (mb_detect_encoding($content, 'UTF-8', true)) {
+		return $content;
+	}
+
 	$str_return = $content;
 
 	if ( function_exists( 'mb_convert_encoding' ) ) {
