@@ -38,6 +38,7 @@ const OCInspectorControls = ( { props } ) => {
 	} = attributes;
 	const { btn_today, btn_day } = attributes;
 	const { text_close, text_close_acc } = attributes;
+	const { id, height } = attributes;
 
 	const multipleLanguages = ln.length > 1;
 
@@ -95,6 +96,34 @@ const OCInspectorControls = ( { props } ) => {
 						] }
 					/>
 				) }
+				<TextControl
+					label={ __(
+						'ID',
+						'iha-orthodox-resources'
+					) }
+					help={ __(
+						"Used to identify this calendar on the page.",
+						'iha-orthodox-resources'
+					) }
+					value={ id }
+					onChange={ ( value ) =>
+						setAttributes( { id: value } )
+					}
+				/>
+				<TextControl
+					label={ __(
+						'Height',
+						'iha-orthodox-resources'
+					) }
+					help={ __(
+						"Use px, em, rem for static size, vh or vw for responsive size.",
+						'iha-orthodox-resources'
+					) }
+					value={ height }
+					onChange={ ( value ) =>
+						setAttributes( { height: value } )
+					}
+				/>
 				<h3>Control Buttons</h3>
 				<ToggleControl
 					label={ __(

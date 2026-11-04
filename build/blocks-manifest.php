@@ -57,6 +57,14 @@ return array(
 				'type' => 'integer',
 				'default' => 0
 			),
+			'id' => array(
+				'type' => 'string',
+				'default' => ''
+			),
+			'height' => array(
+				'type' => 'string',
+				'default' => 'auto'
+			),
 			'btn_language' => array(
 				'type' => 'integer',
 				'default' => '0'

@@ -11,6 +11,13 @@ $iha_orthodox_resources_str_date = $iha_orthodox_resources_date['mon'] . "/" . $
 $iha_orthodox_resources_dp_date = $iha_orthodox_resources_date['year'] . "-" . $iha_orthodox_resources_date['mon'] . "-" . $iha_orthodox_resources_date['mday'];
 
 
+$iha_orthodox_resources_cal_atts = array(
+    'id'		    => iha_orthodox_resources_validate_var_string($attributes['id'], 'iha-dc-' . rand(0, 100)),
+    'height'		=> iha_orthodox_resources_validate_var_string($attributes['height'], 'auto'),
+);
+$iha_orthodox_resources_cal_id = esc_attr($iha_orthodox_resources_cal_atts['id']);
+$iha_orthodox_resources_cal_height = esc_attr($iha_orthodox_resources_cal_atts['height']);
+
 $iha_orthodox_resources_cal_props = array(
     'dt'		=> iha_orthodox_resources_validate_var_int(intval($attributes['dt'] ?? 1), 1, 0, 1),
     'hh'		=> iha_orthodox_resources_validate_var_int(intval($attributes['hh'] ?? 1), 1, 0, 1),
@@ -55,7 +62,13 @@ if ( iha_orthodox_resources_is_editor() ) {
 }
 
 ?>
+<style id="<?php echo $iha_orthodox_resources_cal_id; ?>-style">
+    #<?php echo $iha_orthodox_resources_cal_id; ?> {
+        --ihor-dc-height: <?php echo $iha_orthodox_resources_cal_height; ?>;
+    }
+</style>
 <div
+    id="<?php echo $iha_orthodox_resources_cal_id; ?>"
     <?php echo get_block_wrapper_attributes(); ?>
     data-wp-interactive="orthores/daily-calendar"
     <?php echo wp_interactivity_data_wp_context( $iha_orthodox_resources_context ); ?>

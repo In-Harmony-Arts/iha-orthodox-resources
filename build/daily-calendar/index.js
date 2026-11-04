@@ -154,6 +154,10 @@ const OCInspectorControls = ({
     text_close,
     text_close_acc
   } = attributes;
+  const {
+    id,
+    height
+  } = attributes;
   const multipleLanguages = ln.length > 1;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.InspectorControls, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
@@ -188,6 +192,20 @@ const OCInspectorControls = ({
           label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Russian', 'iha-orthodox-resources'),
           disabled: !ln.includes('ru')
         }]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('ID', 'iha-orthodox-resources'),
+        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Used to identify this calendar on the page.", 'iha-orthodox-resources'),
+        value: id,
+        onChange: value => setAttributes({
+          id: value
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
+        label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)('Height', 'iha-orthodox-resources'),
+        help: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__.__)("Use px, em, rem for static size, vh or vw for responsive size.", 'iha-orthodox-resources'),
+        value: height,
+        onChange: value => setAttributes({
+          height: value
+        })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h3", {
         children: "Control Buttons"
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToggleControl, {
@@ -701,7 +719,7 @@ module.exports = window["wp"]["serverSideRender"];
   \***************************************/
 (module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"orthodox-resources/daily-calendar","version":"1.0.0","title":"Daily Orthodox Calendar","category":"widgets","icon":"calendar-alt","description":"Displays the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar","example":{},"attributes":{"dp":{"type":"integer","default":0},"dt":{"type":"integer","default":1},"hh":{"type":"integer","default":1},"ll":{"type":"integer","default":3},"ss":{"type":"integer","default":1},"tt":{"type":"integer","default":1},"ln":{"type":"array","default":["en","ru"]},"dl":{"type":"string","default":"en"},"lang":{"type":"string","default":"en"},"li":{"type":"integer","default":0},"btn_language":{"type":"integer","default":"0"},"btn_today":{"type":"integer","default":"1"},"btn_day":{"type":"integer","default":"1"},"text_prev":{"type":"string","default":"❰"},"text_prev_acc":{"type":"string","default":"Previous Day"},"text_curr":{"type":"string","default":"⬤"},"text_curr_acc":{"type":"string","default":"Today"},"text_next":{"type":"string","default":"❱"},"text_next_acc":{"type":"string","default":"Next Day"},"text_date":{"type":"string","default":"Show Date Picker"},"text_date_acc":{"type":"string","default":"Pick Date"},"text_language":{"type":"string","default":"”"},"text_language_acc":{"type":"string","default":"Switch Language"},"text_close":{"type":"string","default":"X"},"text_close_acc":{"type":"string","default":"Close popup"}},"supports":{"html":false,"spacing":{"margin":true,"padding":true,"blockGap":true},"color":{"background":true,"text":true,"gradients":false},"typography":{"fontSize":true,"lineHeight":false},"interactivity":true},"textdomain":"iha-orthodox-resources","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js","styles":[{"name":"none","label":"None","isDefault":true},{"name":"blue","label":"Blue"},{"name":"grey","label":"Grey"},{"name":"red","label":"Red"}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"orthodox-resources/daily-calendar","version":"1.0.0","title":"Daily Orthodox Calendar","category":"widgets","icon":"calendar-alt","description":"Displays the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar","example":{},"attributes":{"dp":{"type":"integer","default":0},"dt":{"type":"integer","default":1},"hh":{"type":"integer","default":1},"ll":{"type":"integer","default":3},"ss":{"type":"integer","default":1},"tt":{"type":"integer","default":1},"ln":{"type":"array","default":["en","ru"]},"dl":{"type":"string","default":"en"},"lang":{"type":"string","default":"en"},"li":{"type":"integer","default":0},"id":{"type":"string","default":""},"height":{"type":"string","default":"auto"},"btn_language":{"type":"integer","default":"0"},"btn_today":{"type":"integer","default":"1"},"btn_day":{"type":"integer","default":"1"},"text_prev":{"type":"string","default":"❰"},"text_prev_acc":{"type":"string","default":"Previous Day"},"text_curr":{"type":"string","default":"⬤"},"text_curr_acc":{"type":"string","default":"Today"},"text_next":{"type":"string","default":"❱"},"text_next_acc":{"type":"string","default":"Next Day"},"text_date":{"type":"string","default":"Show Date Picker"},"text_date_acc":{"type":"string","default":"Pick Date"},"text_language":{"type":"string","default":"”"},"text_language_acc":{"type":"string","default":"Switch Language"},"text_close":{"type":"string","default":"X"},"text_close_acc":{"type":"string","default":"Close popup"}},"supports":{"html":false,"spacing":{"margin":true,"padding":true,"blockGap":true},"color":{"background":true,"text":true,"gradients":false},"typography":{"fontSize":true,"lineHeight":false},"interactivity":true},"textdomain":"iha-orthodox-resources","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScriptModule":"file:./view.js","styles":[{"name":"none","label":"None","isDefault":true},{"name":"blue","label":"Blue"},{"name":"grey","label":"Grey"},{"name":"red","label":"Red"}]}');
 
 /***/ }
 

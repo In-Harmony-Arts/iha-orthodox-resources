@@ -97,3 +97,7 @@ Original source code can be found at: https://github.com/In-Harmony-Arts/daily-o
 = 1.0.0 =
 * Overhaul to use render.php and WP Interactivity API
 * Updates for wordpress.org repo submission
+
+= 1.1.0 =
+* Add height setting to daily calendar
+* Made date header sticky when scrolling

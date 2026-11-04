@@ -49,6 +49,14 @@
 			"type": "integer",
 			"default": 0
 		},
+		"id": {
+			"type": "string",
+			"default": ""
+		},
+		"height": {
+			"type": "string",
+			"default": "auto"
+		},
 		"btn_language": {
 			"type": "integer",
 			"default": "0"
