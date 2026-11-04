@@ -7,13 +7,16 @@ Stable tag:        1.0.0
 License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
-Orthodox Calendar with lives of the saints, icons, troparions and kontakions. Daily Scripture readings. Feasts, fast days, days of remembrance.
+Adds features to support Orthodox Christian websites.
 
 == Description ==
 
-There currently is only a Gutenberg Block instance for loading the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar.
+=== Orthodox Calendar ===
 
-There are settings to customize what and how the content of the daily information displayed.
+Adds a Gutenberg Block for loading the daily Orthodox Calendar information from https://www.holytrinityorthodox.com/calendar.
+* Settings to customize what and how the daily content information is displayed.
+* 3 prebuilt styles to choose from
+* Option for no applied styles so it applies your theme styles
 
 There are plans to expand the blocks and/or functionality related to running an Orthodox Christian website in the future.
 
